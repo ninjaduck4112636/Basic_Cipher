@@ -56,7 +56,7 @@ int main()
 					cout << y << endl;
 				}
 			}
-//			
+			file2.close();
 		}	
 	}
 	else

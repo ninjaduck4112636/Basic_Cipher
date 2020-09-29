@@ -1,22 +1,20 @@
-// cipher which will change key every minute
-
 #include <iostream>
 #include <string>
 #include <fstream>
 #include <ctime>
 #include <cstdlib>
+//#include "master_tracker.cpp"
+
 using namespace std;
 
 fstream file;
 fstream file1;
 
 void cipher();
-void decreption();
 
 int main()
 {
 	cipher();
-	decreption();
 	return 0;
 }
 
@@ -54,15 +52,4 @@ void cipher(){
 	file1 << "------------------------------" << endl;
 	
 	
-}
-
-void decreption(){
-	fstream file2;
-	file2.open("G:/Dev c++ files/Ciper_1/cipher_key.txt",ios::in);
-	if(file2.is_open()){
-		cout << "File is Open" << endl;
-		
-	}else{
-		cout << "File is not Opened" << endl;
-	}
 }

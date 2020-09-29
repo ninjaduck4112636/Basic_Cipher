@@ -106,3 +106,30 @@ X is:  Z
 Y is:  [
 Z is:  \
 ------------------------------
+A is:  h
+B is:  i
+C is:  j
+D is:  k
+E is:  l
+F is:  m
+G is:  n
+H is:  o
+I is:  p
+J is:  q
+K is:  Y
+L is:  Z
+M is:  [
+N is:  \
+O is:  ]
+P is:  ^
+Q is:  _
+R is:  `
+S is:  a
+T is:  b
+U is:  c
+V is:  d
+W is:  e
+X is:  f
+Y is:  g
+Z is:  h
+------------------------------
