@@ -26,9 +26,9 @@ int main()
 				file >> master_key_x;
 			}
 			int *ptr = new int(master_key_x);
-			cout << *ptr << endl;
+//			cout << *ptr << endl;
 			*ptr+=1;
-			cout << *ptr << endl;
+//			cout << *ptr << endl;
 			file1.open("Master_tracker.txt",ios::out|ios::in|ios::trunc);
 			file1 << *ptr;
 			for(int i=65;i<=90;i++)
@@ -36,25 +36,27 @@ int main()
 				
 			m.insert({*ptr,v});
 			file2.open("vector_keys.txt",ios::out|ios::in|ios::trunc);
-			file2.write((char *)&m,sizeof(map<int,vector<char>>));
+			file2.write((char *)&m,sizeof(map <int,vector<char>>));
+			
+			
+			file2.seekg(0);
+			
+			map <int,vector<char>>m1;
+			file2.read((char *)&m1,sizeof(map <int,vector<char>>));
+			
+			
+			for(auto x : m1){
+				cout << x.first;
+				for(auto y : x.second){
+					cout << y << endl;
+				}
+			}
+			
 		}	
 	}
 	else
 		cout << "File not Open" << endl;
 
-
-
-//	for(int i=65;i<=90;i++){
-//		v.push_back(char(i));
-//	}
-//	
-//	m.insert({*ptr,v});
-	
-//	for(auto x: m){
-//		cout << x.first << endl;
-//		for(auto y : v)
-//			cout << y << endl;
-//	}
 	
 	return 0;
 }
