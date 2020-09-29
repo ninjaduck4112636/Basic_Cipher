@@ -31,6 +31,11 @@ int main()
 //			cout << *ptr << endl;
 			file1.open("Master_tracker.txt",ios::out|ios::in|ios::trunc);
 			file1 << *ptr;
+			file1.close();
+			file.close();
+			
+			
+			
 			for(int i=65;i<=90;i++)
 				v.push_back(char(i));
 				
@@ -46,12 +51,12 @@ int main()
 			
 			
 			for(auto x : m1){
-				cout << x.first;
+				cout << x.first << endl;
 				for(auto y : x.second){
 					cout << y << endl;
 				}
 			}
-			
+//			
 		}	
 	}
 	else
