@@ -11,7 +11,6 @@ fstream file;
 fstream file1;
 
 void cipher();
-
 void decreption();
 
 int main()
@@ -20,6 +19,7 @@ int main()
 	decreption();
 	return 0;
 }
+
 
 
 void cipher(){
@@ -52,6 +52,8 @@ void cipher(){
 		file1 << a << " is:  " << char(temp+(65+(a%25))) << endl;
 	}
 	file1 << "------------------------------" << endl;
+	
+	
 }
 
 void decreption(){
