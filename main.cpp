@@ -9,12 +9,18 @@ using namespace std;
 
 fstream file;
 fstream file1;
+
 void cipher();
+
+void decreption();
+
 int main()
 {
 	cipher();
+	decreption();
 	return 0;
 }
+
 
 void cipher(){
 	char a=65;
@@ -46,4 +52,15 @@ void cipher(){
 		file1 << a << " is:  " << char(temp+(65+(a%25))) << endl;
 	}
 	file1 << "------------------------------" << endl;
+}
+
+void decreption(){
+	fstream file2;
+	file2.open("G:/Dev c++ files/Ciper_1/cipher_key.txt",ios::in);
+	if(file2.is_open()){
+		cout << "File is Open" << endl;
+		
+	}else{
+		cout << "File is not Opened" << endl;
+	}
 }
