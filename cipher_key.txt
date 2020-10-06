@@ -52,3 +52,30 @@ X is:  f
 Y is:  g
 Z is:  h
 ------------------------------
+A is:  Y
+B is:  Z
+C is:  [
+D is:  \
+E is:  ]
+F is:  ^
+G is:  _
+H is:  `
+I is:  a
+J is:  b
+K is:  J
+L is:  K
+M is:  L
+N is:  M
+O is:  N
+P is:  O
+Q is:  P
+R is:  Q
+S is:  R
+T is:  S
+U is:  T
+V is:  U
+W is:  V
+X is:  W
+Y is:  X
+Z is:  Y
+------------------------------

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 void decripter();
@@ -13,4 +14,7 @@ void decripter(){
 	
 	cout << "Enter the Key to Decript: ";
 	cin >> key;
+	
+	
+	
 }
