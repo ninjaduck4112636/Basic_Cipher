@@ -47,7 +47,8 @@ void key_keeper(vector <char>v, map <int,vector<char>>m){
 //				v.push_back(char(i));
 				
 			m.insert({*ptr,v});
-			file2.open("vector_keys.txt",ios::out|ios::in|ios::trunc);
+			string ptr_str = to_string(*ptr);
+			file2.open(ptr_str+"vector_keys.txt",ios::out|ios::in|ios::trunc);
 			file2.write((char *)&m,sizeof(map <int,vector<char>>));
 			
 			
