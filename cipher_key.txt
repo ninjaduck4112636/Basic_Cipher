@@ -1,0 +1,27 @@
+A is:  f
+B is:  g
+C is:  h
+D is:  i
+E is:  j
+F is:  k
+G is:  l
+H is:  m
+I is:  n
+J is:  o
+K is:  W
+L is:  X
+M is:  Y
+N is:  Z
+O is:  [
+P is:  \
+Q is:  ]
+R is:  ^
+S is:  _
+T is:  `
+U is:  a
+V is:  b
+W is:  c
+X is:  d
+Y is:  e
+Z is:  f
+------------------------------
