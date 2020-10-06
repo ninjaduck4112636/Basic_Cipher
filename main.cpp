@@ -3,7 +3,7 @@
 #include <fstream>
 #include <ctime>
 #include <cstdlib>
-//#include "master_tracker.cpp"
+#include "master_tracker.cpp"
 
 using namespace std;
 
@@ -46,10 +46,20 @@ void cipher(){
 	file << endl;
 	
 	
+	vector <char>v;
+	map <int,vector<char>>m;
+	
 	for(a;a<=z;a++){
-		file1 << a << " is:  " << char(temp+(65+(a%25))) << endl;
+		
+		char x_keys = char(temp+(65+(a%25)));
+		
+		v.push_back(x_keys);
+		
+		file1 << a << " is:  " << x_keys << endl;
 	}
 	file1 << "------------------------------" << endl;
+	
+	key_keeper(v, m);
 	
 	
 }
