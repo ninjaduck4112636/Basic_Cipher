@@ -1,5 +1,7 @@
 #include <iostream>
 #include <fstream>
+#include <map>
+#include <vector>
 using namespace std;
 
 void decripter();
@@ -22,6 +24,17 @@ void decripter(){
 	
 	if(file.is_open()){
 		cout << "File is Open" << endl;
+		
+		file.seekg(0);
+		map <int,vector<char>>m1;
+		
+		
+		file.read((char *)&m1,sizeof(map <int,vector<char>>));
+		
+//		for(auto value : m1){
+//			cout << value.first << endl;
+//		}
+		file.close();
 	}
 	else{
 		cout << "File not Open" << endl;
