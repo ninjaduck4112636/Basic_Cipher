@@ -22,19 +22,33 @@ void decripter(){
 	
 	file.open(string_key+"vector_keys.txt",ios::in|ios::out|ios::ate);
 	
+	// debugging
+	
 	if(file.is_open()){
+		try{
 		cout << "File is Open" << endl;
 		
+		map <int,vector<char>>m;
+		
+		cout << file.tellg() << endl;
+		
+		cout << "Size of Map: " << m.size() << endl;
 		file.seekg(0);
-		map <int,vector<char>>m1;
+		cout << file.tellg() << endl;
+		file.read((char *)&m,sizeof(map <int,vector<char>>));
 		
 		
-		file.read((char *)&m1,sizeof(map <int,vector<char>>));
-		
-//		for(auto value : m1){
+//		for(auto value : m){
 //			cout << value.first << endl;
 //		}
+		
+		cout << "Size of Map: " << m.size() << endl;
+		
+		}catch(...){
+			cout << "Exception" << endl;
+		}
 		file.close();
+		cout << "File is Closed" << endl;
 	}
 	else{
 		cout << "File not Open" << endl;
